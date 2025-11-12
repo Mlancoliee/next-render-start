@@ -3,6 +3,7 @@ import Link from "next/link"
 import { ArrowRight, Code, Server, Zap, RefreshCw } from "lucide-react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { UploadTestButton } from "./upload-test-button"
+import { SessionDisplay } from "@/components/session-display"
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             CSR / SSR / SSG / ISR
           </p>
+          <div className="mt-4 text-sm text-gray-700">
+            <SessionDisplay />
+          </div>
         </div>
 
         {/* 基础渲染策略 */}
